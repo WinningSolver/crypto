@@ -17,7 +17,7 @@ st.title("💰 Crypto Buy & Hold Backtest Dashboard")
 st.sidebar.header("Backtest Settings")
 
 symbol = st.sidebar.text_input("Enter Crypto Symbol (e.g. SOL/USDT)", "SOL/USDT")
-year = st.sidebar.selectbox("Select Year for Backtest", list(range(2018, datetime.now().year + 1))[::-1])
+year = st.sidebar.selectbox("Select Year for Backtest", list(range(2020, datetime.now().year + 1))[::-1])
 exchange_id = "kucoin"
 
 run = st.sidebar.button("Run Backtest")
